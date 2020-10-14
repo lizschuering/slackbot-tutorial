@@ -28,13 +28,13 @@ def command():
 
   # # send channel a response
   # response = slack_client.chat_postMessage(
-  #   channel='#{}'.format(info["channel_name"]), 
+  #   channel='#{}'.format(info["channel"]), 
   #   text=commander.getMessage()
   # )
 
   try:
     response = slack_client.chat_postMessage(
-      channel='#{}'.format(info["channel_name"]), 
+      channel='#{}'.format(info["harvestbot-test"]), 
       text=commander.getMessage()
     )#.get()
   except SlackApiError as e:
